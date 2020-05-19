@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Toltek.Bbb.Api/1.0.9-beta": {
+      "Toltek.Bbb.Api/1.0.10-beta": {
         "dependencies": {
           "App.Metrics": "3.2.0",
           "App.Metrics.AspNetCore.Tracking": "3.2.0",
@@ -3520,7 +3520,7 @@
       }
     },
     ".NETCoreApp,Version=v3.1/linux-x64": {
-      "Toltek.Bbb.Api/1.0.9-beta": {
+      "Toltek.Bbb.Api/1.0.10-beta": {
         "dependencies": {
           "App.Metrics": "3.2.0",
           "App.Metrics.AspNetCore.Tracking": "3.2.0",
@@ -5964,7 +5964,7 @@
     }
   },
   "libraries": {
-    "Toltek.Bbb.Api/1.0.9-beta": {
+    "Toltek.Bbb.Api/1.0.10-beta": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
