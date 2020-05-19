@@ -20,9 +20,9 @@ echo Toltel install Api
 
 
 sudo mkdir /home/toltek
-sudo cd  /home/toltek/
+cd  /home/toltek/
 sudo git clone https://github.com/toltekyazilim/Toltek.Bbb.Api.git
-sudo cd  /home/toltek/Toltek.Bbb.Api
+cd  /home/toltek/Toltek.Bbb.Api
 sudo git pull
 sudo dotnet dev-certs https --trust
 
