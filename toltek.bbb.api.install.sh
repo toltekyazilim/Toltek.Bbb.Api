@@ -1,4 +1,4 @@
-# Toltek Bigbluebutton Api - Install Bash
+﻿# Toltek Bigbluebutton Api - Install Bash
 # Yavuz 19/05/2020
 echo Toltek.Bbb.Api
 
@@ -16,7 +16,7 @@ yes | sudo apt-get install aspnetcore-runtime-3.1
 yes | sudo apt-get install dotnet-sdk-3.1
 
 
-echo Toltel install Api
+echo Toltek install Api
 
 
 mkdir /home/toltek
@@ -35,11 +35,11 @@ service nginx reload
 echo Toltek configure service
 
 systemctl stop toltek.bbb.api.service
-systemctl disable toltek.bbb.api.service
+#systemctl disable toltek.bbb.api.service
 
 rm /etc/systemd/system/toltek.bbb.api.service
 ln -s /home/toltek/Toltek.Bbb.Api/toltek.bbb.api.service /etc/systemd/system/toltek.bbb.api.service
 
-systemctl enable toltek.bbb.api.service
+#systemctl enable toltek.bbb.api.service
 systemctl start toltek.bbb.api.service
 systemctl status toltek.bbb.api.service
