@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 # Toltek Bigbluebutton Api - Install Bash
 # Yavuz 19/05/2020
 echo Toltek.Bbb.Api install started
@@ -19,10 +19,12 @@ mkdir /home/toltek
 cd  /home/toltek/
 git clone https://github.com/toltekyazilim/Toltek.Bbb.Api.git
 cd  /home/toltek/Toltek.Bbb.Api
-
-dotnet dev-certs https --trust 
+git pull
+dotnet dev-certs https --trust
 
 ln -s /home/toltek/Toltek.Bbb.Api/toltek.bbb.api.nginx /etc/bigbluebutton/nginx/toltek.bbb.api.nginx
 service nginx reload
 
-dotnet Toltek.Bbb.Api.dll
+ln -s /home/toltek/Toltek.Bbb.Api/toltek.bbb.api.service /etc/systemd/system/toltek.bbb.api.service
+sudo systemctl start toltek.bbb.api.service
+sudo systemctl status toltek.bbb.api.service
