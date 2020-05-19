@@ -1,0 +1,15 @@
+﻿{
+  "Template=": "/home/toltek/Files/Templates/BbbWeb/bigbluebutton.properties",
+  "Target": "/usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties",
+  "Version": "0.1",
+  "Settings": [
+    {
+      "ServerUrl": "https://live.tolteklive.com",
+      "DefaultGuestPolicy": "ALWAYS_ACCEPT",
+      "SvgImagesRequired": true,
+      "DefaultWelcomeMessage": "Welcome",
+      "DefaultWelcomeMessageFooter": "Toltek",
+      "DefaultMeetingDuration": 0
+    }
+  ]
+}
