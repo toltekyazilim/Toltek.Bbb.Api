@@ -1,5 +1,5 @@
 ﻿[Unit]
-Description=Toltek Bbb Api
+Description=ToltekBbbApi
 
 [Service]
 WorkingDirectory=/home/toltek/Toltek.Bbb.Api
@@ -9,7 +9,7 @@ Restart=always
 RestartSec=10
 KillSignal=SIGINT
 SyslogIdentifier=toltek-bbb-api
-User=www-data
+User=root
 Environment=ASPNETCORE_ENVIRONMENT=Toltek
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
 
