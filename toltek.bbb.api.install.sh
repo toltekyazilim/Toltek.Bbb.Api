@@ -14,4 +14,7 @@ cd  /home/toltek/Toltek.Bbb.Api
 
 dotnet dev-certs https --trust 
 
+ln -s /home/toltek/Toltek.Bbb.Api/toltek.bbb.api.nginx /etc/bigbluebutton/nginx/toltek.bbb.api.nginx
+service nginx reload
+
 dotnet Toltek.Bbb.Api.dll
