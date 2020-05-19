@@ -5,15 +5,15 @@ echo Toltek.Bbb.Api install started
 
 
 
-#wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-#sudo dpkg -i packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
 
-#sudo apt-get update
+yes | sudo apt-get update
 yes | sudo apt-get install apt-transport-https
 
 yes | sudo apt-get update
-yes |sudo apt-get install aspnetcore-runtime-3.1
-yes |sudo apt-get install dotnet-sdk-3.1
+yes | sudo apt-get install aspnetcore-runtime-3.1
+yes | sudo apt-get install dotnet-sdk-3.1
 
 mkdir /home/toltek
 cd  /home/toltek/
