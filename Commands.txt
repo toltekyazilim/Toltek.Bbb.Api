@@ -6,4 +6,5 @@ wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/
 service nginx reload
 systemctl status nginx
 
+systemctl stop toltek.bbb.api.service
 systemctl status toltek.bbb.api.service
