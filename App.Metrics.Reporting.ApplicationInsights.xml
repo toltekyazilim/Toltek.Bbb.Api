@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>App.Metrics.Reporting.ApplicationInsights</name>
+    </assembly>
+    <members>
+        <member name="F:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporter.clientCfg">
+            <summary>
+            Suprisingly <see cref="T:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration"/> implements <see cref="T:System.IDisposable"/> unlike <see cref="T:Microsoft.ApplicationInsights.TelemetryClient"/>.
+            https://github.com/Microsoft/ApplicationInsights-dotnet/blob/develop/src/Microsoft.ApplicationInsights/Extensibility/TelemetryConfiguration.cs#L340
+            </summary>
+        </member>
+        <member name="P:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporter.Filter">
+            <inheritdoc />
+        </member>
+        <member name="P:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporter.FlushInterval">
+            <inheritdoc />
+        </member>
+        <member name="P:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporter.Formatter">
+            <inheritdoc />
+        </member>
+        <member name="M:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporter.#ctor(App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporterOptions)">
+            <summary>
+                Initializes a new instance of the <see cref="T:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporter"/> class.
+            </summary>
+            <param name="options">
+                Configuration for <see cref="T:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporter"/>.
+            </param>
+        </member>
+        <member name="M:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporter.FlushAsync(App.Metrics.MetricsDataValueSource,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporterOptions">
+            <summary>
+            Provides programmatic configuration of Microsoft Application Insights reporting in the App Metrics framework.
+            </summary>
+        </member>
+        <member name="P:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporterOptions.InstrumentationKey">
+            <summary>
+                Application Insights instrumentation key.
+            </summary>
+        </member>
+        <member name="P:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporterOptions.Filter">
+            <summary>
+            Gets or sets the <see cref="T:App.Metrics.Filters.IFilterMetrics" /> to use for just this reporter.
+            </summary>
+        </member>
+        <member name="P:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporterOptions.FlushInterval">
+            <summary>
+            Gets or sets the interval between flushing metrics.
+            </summary>
+        </member>
+        <member name="T:App.Metrics.ApplicationInsightsReporterBuilder">
+            <summary>
+                Builder for configuring Azure Application Insights reporting using an <see cref="T:App.Metrics.Builder.IMetricsReportingBuilder" />.
+            </summary>
+        </member>
+        <member name="M:App.Metrics.ApplicationInsightsReporterBuilder.ToApplicationInsights(App.Metrics.Builder.IMetricsReportingBuilder,App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporterOptions)">
+            <summary>
+                Add the <see cref="T:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporter" /> allowing metrics to be reported to Azure Application Insights.
+            </summary>
+            <param name="reportingBuilder">
+                The <see cref="T:App.Metrics.Builder.IMetricsReportingBuilder" /> used to configure metrics reporters.
+            </param>
+            <param name="options">The reporting options to use.</param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+        <member name="M:App.Metrics.ApplicationInsightsReporterBuilder.ToApplicationInsights(App.Metrics.Builder.IMetricsReportingBuilder,System.Action{App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporterOptions})">
+            <summary>
+                Add the <see cref="T:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporter" /> allowing metrics to be reported to Azure Application Insights.
+            </summary>
+            <param name="reportingBuilder">
+                The <see cref="T:App.Metrics.Builder.IMetricsReportingBuilder" /> used to configure metrics reporters.
+            </param>
+            <param name="setupAction">The reporting options to use.</param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+        <member name="M:App.Metrics.ApplicationInsightsReporterBuilder.ToApplicationInsights(App.Metrics.Builder.IMetricsReportingBuilder,System.String)">
+            <summary>
+                Add the <see cref="T:App.Metrics.Reporting.ApplicationInsights.ApplicationInsightsReporter" /> allowing metrics to be reported to Azure Application Insights.
+            </summary>
+            <param name="reportingBuilder">
+                The <see cref="T:App.Metrics.Builder.IMetricsReportingBuilder" /> used to configure metrics reporters.
+            </param>
+            <param name="instrumentationKey">Application Insights instrumentation key.</param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+    </members>
+</doc>
