@@ -8,3 +8,4 @@ systemctl status nginx
 
 systemctl stop toltek.bbb.api.service
 systemctl status toltek.bbb.api.service
+systemctl start toltek.bbb.api.service
