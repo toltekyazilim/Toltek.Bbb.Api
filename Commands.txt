@@ -1,6 +1,6 @@
-﻿wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/Files/Bash/toltek.bbb.api.install.sh | bash -s -- -v xenial-22
+﻿wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/toltek.bbb.api.install.sh | bash -s -- -v xenial-22
 
-wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/Files/Bash/toltek.bbb.api.update.sh | bash -s -- -v xenial-22
+wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/toltek.bbb.api.update.sh | bash -s -- -v xenial-22
 
 
 service nginx reload
