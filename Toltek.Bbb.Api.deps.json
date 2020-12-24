@@ -34,8 +34,8 @@
           "Serilog.Extensions.Logging.File": "2.0.0",
           "Serilog.Sinks.File": "4.1.0",
           "Swashbuckle.AspNetCore": "5.6.3",
-          "Toltek.Bbb.ApiClient": "2.2.7",
-          "Toltek.Bbb.Entity": "2.2.6",
+          "Toltek.Bbb.ApiClient": "2.2.8",
+          "Toltek.Bbb.Entity": "2.2.8",
           "Toltek.Diagnostics.HealthChecks": "2.1.2",
           "Toltek.Metrics": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -3177,15 +3177,15 @@
           "lib/netstandard2.0/Toltek.dll": {}
         }
       },
-      "Toltek.Bbb.Models/2.2.7": {
+      "Toltek.Bbb.Models/2.2.8": {
         "dependencies": {
           "AutoMapper": "10.1.1",
           "System.Text.Json": "4.7.2"
         },
         "runtime": {
           "lib/netstandard2.0/Toltek.Bbb.Models.dll": {
-            "assemblyVersion": "2.2.7.0",
-            "fileVersion": "2.2.7.0"
+            "assemblyVersion": "2.2.8.0",
+            "fileVersion": "2.2.8.0"
           }
         },
         "compile": {
@@ -3233,13 +3233,13 @@
           "App.Metrics.Reporting.ApplicationInsights.dll": {}
         }
       },
-      "Toltek.Bbb.ApiClient/2.2.7": {
+      "Toltek.Bbb.ApiClient/2.2.8": {
         "dependencies": {
           "RestSharp": "106.11.7",
           "System.Text.Json": "4.7.2",
           "System.Xml.XDocument": "4.3.0",
           "Toltek": "2.2.3",
-          "Toltek.Bbb.Models": "2.2.7"
+          "Toltek.Bbb.Models": "2.2.8"
         },
         "runtime": {
           "Toltek.Bbb.ApiClient.dll": {}
@@ -3248,11 +3248,11 @@
           "Toltek.Bbb.ApiClient.dll": {}
         }
       },
-      "Toltek.Bbb.Entity/2.2.6": {
+      "Toltek.Bbb.Entity/2.2.8": {
         "dependencies": {
           "MongoDB.Driver": "2.11.2",
           "Newtonsoft.Json": "12.0.3",
-          "Toltek.Bbb.Models": "2.2.7"
+          "Toltek.Bbb.Models": "2.2.8"
         },
         "runtime": {
           "Toltek.Bbb.Entity.dll": {}
@@ -6528,12 +6528,12 @@
       "path": "toltek/2.2.3",
       "hashPath": "toltek.2.2.3.nupkg.sha512"
     },
-    "Toltek.Bbb.Models/2.2.7": {
+    "Toltek.Bbb.Models/2.2.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dGRWSu5odc0ctmwMDxl0MfW5108ue3AhP4bc2EnUvWwoA93vTAyT+GgbNpHYuRe1Nd6PKaPTpNPetuAKEPptqg==",
-      "path": "toltek.bbb.models/2.2.7",
-      "hashPath": "toltek.bbb.models.2.2.7.nupkg.sha512"
+      "sha512": "sha512-z4zXs35QRsfEVvZdIQq4zuKWyMXbvONr88s+rchLD/G74ms8xvvQrrJRrkujEyWH2UVbWAib66mzdYLFC28uDQ==",
+      "path": "toltek.bbb.models/2.2.8",
+      "hashPath": "toltek.bbb.models.2.2.8.nupkg.sha512"
     },
     "Toltek.Diagnostics.HealthChecks/2.1.2": {
       "type": "package",
@@ -6554,12 +6554,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Toltek.Bbb.ApiClient/2.2.7": {
+    "Toltek.Bbb.ApiClient/2.2.8": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Toltek.Bbb.Entity/2.2.6": {
+    "Toltek.Bbb.Entity/2.2.8": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
