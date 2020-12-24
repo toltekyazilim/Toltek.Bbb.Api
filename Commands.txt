@@ -10,5 +10,10 @@ systemctl stop toltek.bbb.api.service
 systemctl start toltek.bbb.api.service
 systemctl status toltek.bbb.api.service
 
+sudo journalctl -u toltek.bbb.api.service
+
 sudo su
 uzem2006!
+
+
+curl -I  http://localhost:5005
