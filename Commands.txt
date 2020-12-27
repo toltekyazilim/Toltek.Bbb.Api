@@ -17,3 +17,6 @@ uzem2006!
 
 
 curl -I  http://localhost:5005
+
+
+wget -qO- https://player.kampus.ebyu.edu.tr/Jobs/ebyu-brand.sh | bash -s -- -v xenial-22
