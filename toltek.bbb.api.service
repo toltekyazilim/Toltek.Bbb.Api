@@ -9,7 +9,7 @@ Restart=always
 RestartSec=10
 KillSignal=SIGINT
 SyslogIdentifier=toltek-bbb-api
-User=root
+User=bigbluebutton
 Environment=ASPNETCORE_ENVIRONMENT=Toltek
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=true
 
