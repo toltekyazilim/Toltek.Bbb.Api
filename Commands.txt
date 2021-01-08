@@ -12,6 +12,10 @@ systemctl status toltek.bbb.api.service
 
 sudo journalctl -u toltek.bbb.api.service
 
+
+https://github.com/Tyrrrz/CliWrap
+https://docs.microsoft.com/en-us/dotnet/api/system.security.accesscontrol.filesystemrights?view=netframework-4.8
+
 sudo su
 uzem2006!
 
