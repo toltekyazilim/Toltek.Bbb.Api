@@ -5,15 +5,15 @@ echo Toltek.Bbb.Api
 echo Toltek install dotnet
 sudo su
 
-sudo wget -qO - https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 
 yes | sudo apt-get update
 yes | sudo apt-get install apt-transport-https
 
 yes | sudo apt-get update
-yes | sudo apt-get install aspnetcore-runtime-3.1
-yes | sudo apt-get install dotnet-sdk-3.1
+yes | sudo apt-get install aspnetcore-runtime-5.0
+yes | sudo apt-get install -y dotnet-sdk-5.0
 
 
 echo Toltek install Api
