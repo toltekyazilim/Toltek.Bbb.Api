@@ -2,6 +2,10 @@
 
 wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/toltek.bbb.api.update.sh | bash -s -- -v xenial-22
 
+2.3
+
+wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/toltek.bbb.api.install.sh | bash -s -- -v bionic-230-dev
+wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/toltek.bbb.api.update.sh | bash -s -- -v bionic-230-dev
 
 service nginx reload
 systemctl status nginx
