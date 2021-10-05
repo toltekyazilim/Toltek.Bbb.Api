@@ -4,7 +4,7 @@ wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/
 
 2.3
 
-wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/toltek.bbb.api.install.sh | bash -s -- -v bionic-23
+wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/toltek.bbb.api.install2.sh | bash -s -- -v bionic-23
 wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/toltek.bbb.api.update.sh | bash -s -- -v bionic-23
 
 service nginx reload
