@@ -4416,14 +4416,14 @@
     "Toltek.Bbb.ApiClient/0.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fP0ewcYthfcrN7JOVGqPswhzZKlBU1ewWiNDRtNHTNbgiZQH0TjQerICHNWirbIFhGwm2g0r+rOOPG4FWDzSyg==",
+      "sha512": "sha512-u+J6U9OcFrLQLy/k6Q6n/AOFXiH8VdVbIWIYwIekWMQIYPQ64wkGl6+BOvAUWdADctVD1hGmKTz0wGjLiM7m5A==",
       "path": "toltek.bbb.apiclient/0.1.2",
       "hashPath": "toltek.bbb.apiclient.0.1.2.nupkg.sha512"
     },
     "Toltek.Bbb.Models/0.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yJe+Z5apeHDdz6Bg7GC/WReJSdlwKvDnGy6CiUx6AskdCx/pA4HLIRXIsOHx46VlR1t+SgGP04N4GDOwSh73Jw==",
+      "sha512": "sha512-C3SmT/09h9/ZBsPMqMnbHnbhs2lqLWkXSeX7yWZsNSJiytssM4KBsZiCcRXBDd9sdQ3LQQRmromRz+L9zAIpCQ==",
       "path": "toltek.bbb.models/0.1.2",
       "hashPath": "toltek.bbb.models.0.1.2.nupkg.sha512"
     },
