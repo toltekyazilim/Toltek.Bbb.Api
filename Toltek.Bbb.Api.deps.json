@@ -4426,7 +4426,7 @@
     "Toltek.Bbb.Entity/0.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sWjNrpSm85Q7Z93oRuQlFr1mmBrvheXAp/mn+qFBUlHhclyCqQM7+xLKqwyr0lQGAobriz0SJ2lE7fy7CZ0Xsg==",
+      "sha512": "sha512-fRP1WDiwaMUVVkMHO+NFRqoodlSsljr8tHNLZ+kHbjeP8GcFUYyFvDV/umEC3n9OUgOsqoCBQZN9NmfzcSnS3w==",
       "path": "toltek.bbb.entity/0.1.2",
       "hashPath": "toltek.bbb.entity.0.1.2.nupkg.sha512"
     },
