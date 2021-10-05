@@ -5,7 +5,7 @@ echo Toltek.Bbb.Api
 echo Toltek install dotnet
 sudo su
 
-sudo wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 
 yes | sudo apt-get update
