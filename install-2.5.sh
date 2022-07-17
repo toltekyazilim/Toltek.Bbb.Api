@@ -28,7 +28,7 @@ dotnet dev-certs https --trust
 
 echo Toltek configure nginx
 
-rm /etc/bigbluebutton/nginx/toltek.bbb.api.nginx
+rm /usr/share/bigbluebutton/nginx/toltek.bbb.api.nginx
 ln -s /home/toltek/Toltek.Bbb.Api/toltek.bbb.api.nginx /usr/share/bigbluebutton/nginx/toltek.bbb.api.nginx
 service nginx reload
 
