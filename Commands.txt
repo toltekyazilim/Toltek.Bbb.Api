@@ -11,6 +11,10 @@ wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/
 wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/install.sh | bash -s -- -v bionic-240
 wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/update.sh | bash -s -- -v bionic-23
 
+2.5
+wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/install-2.5.sh | bash -s -- -v focal-250
+wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.Api/master/update-2.5.sh | bash -s -- -v focal-250
+
 
 service nginx reload
 systemctl status nginx

@@ -12,8 +12,8 @@ yes | sudo apt-get update
 yes | sudo apt-get install apt-transport-https
 
 yes | sudo apt-get update
-yes | sudo apt-get install aspnetcore-runtime-6.0
-yes | sudo apt-get install -y dotnet-sdk-6.0
+yes | sudo apt-get install aspnetcore-runtime-5.0
+yes | sudo apt-get install -y dotnet-sdk-5.0
 
 
 echo Toltek install Api
