@@ -1,7 +1,7 @@
 ﻿# Toltek Bigbluebutton Api - Update Bash
 # Yavuz 19/05/2020
 
-FILE=/usr/share/bigbluebutton/nginx/toltek.bbb.api.nginx
+FILE=/etc/bigbluebutton/nginx/toltek.bbb.api.nginx
 if [ -f "$FILE" ]; then
     systemctl stop toltek.bbb.api.service
 
