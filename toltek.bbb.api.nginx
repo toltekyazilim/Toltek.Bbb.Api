@@ -14,12 +14,12 @@ location /toltek
 
 	  # Simple requests
     if ($request_method ~* "(GET|POST)") {
-      add_header "Access-Control-Allow-Origin"  live.kampus.ebyu.edu.tr;
+      add_header "Access-Control-Allow-Origin"  "https://live.kampus.ebyu.edu.tr";
     }
 
     # Preflighted requests
     if ($request_method = OPTIONS ) {
-      add_header "Access-Control-Allow-Origin"  live.kampus.ebyu.edu.tr;
+      add_header "Access-Control-Allow-Origin"  "https://live.kampus.ebyu.edu.tr";
       add_header "Access-Control-Allow-Methods" "GET, POST, OPTIONS, HEAD";
       #add_header "Access-Control-Allow-Headers" "Authorization, Origin, X-Requested-With, Content-Type, Accept,x-signalr-user-agent";
       return 200;
