@@ -23,7 +23,7 @@ location /toltek
       add_header "Access-Control-Allow-Origin"  "https://live.kampus.ebyu.edu.tr";
       add_header "Access-Control-Allow-Methods" "GET, POST, OPTIONS, HEAD";
 	  add_header "Access-Control-Allow-Credentials" "true";
-      #add_header "Access-Control-Allow-Headers" "Authorization, Origin, X-Requested-With, Content-Type, Accept,x-signalr-user-agent";
+      add_header "Access-Control-Allow-Headers" "Authorization, Origin, X-Requested-With, Content-Type, Accept,X-Signalr-User-Agent";
       return 200;
     }
 }
