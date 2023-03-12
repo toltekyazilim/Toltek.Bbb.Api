@@ -6,25 +6,17 @@ location /toltek
 	  proxy_set_header    X-Forwarded-Proto $scheme;
 	  proxy_set_header    Upgrade           $http_upgrade;
 	  proxy_set_header    Connection        "Upgrade";
+	  proxy_cache_bypass $http_upgrade;
 	  proxy_http_version  1.1;
-	  proxy_read_timeout  6h;
+
+	  # Configure ServerSentEvents
+      proxy_buffering off;
+
+      # Configure LongPolling
+      proxy_read_timeout 100s; 
 	  proxy_send_timeout  6h;
 	  client_body_timeout 6h;
 	  send_timeout        6h;
 
-	  # Simple requests
-    if ($request_method ~* "(GET|POST)") {
-      add_header "Access-Control-Allow-Origin"  "https://live.kampus.ebyu.edu.tr";
-	  add_header "Access-Control-Allow-Credentials" "true";
-	  add_header "Access-Control-Allow-Headers" "Authorization, Origin, X-Requested-With,x-requested-with, Content-Type, Accept,x-signalr-user-agent";
-    }
-
-    # Preflighted requests
-    if ($request_method = OPTIONS ) {
-      add_header "Access-Control-Allow-Origin"  "https://live.kampus.ebyu.edu.tr";
-      add_header "Access-Control-Allow-Methods" "GET, POST, OPTIONS, HEAD";
-	  add_header "Access-Control-Allow-Credentials" "true";
-      add_header "Access-Control-Allow-Headers" "Authorization, Origin, X-Requested-With,x-requested-with, Content-Type, Accept,X-Signalr-User-Agent";
-      return 200;
-    }
+	 
 }
