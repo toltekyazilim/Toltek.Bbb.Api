@@ -40,6 +40,8 @@ systemctl stop toltek.bbb.api.service
 rm /etc/systemd/system/toltek.bbb.api.service
 ln -s /home/toltek/Toltek.Bbb.Api/toltek.bbb.api.service /etc/systemd/system/toltek.bbb.api.service
 
-#systemctl enable toltek.bbb.api.service
+
 systemctl start toltek.bbb.api.service
 systemctl status toltek.bbb.api.service
+
+sudo systemctl enable toltek.bbb.api.service
