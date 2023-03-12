@@ -10,5 +10,18 @@ location /toltek
 	  proxy_read_timeout  6h;
 	  proxy_send_timeout  6h;
 	  client_body_timeout 6h;
-	  send_timeout        6h; 
+	  send_timeout        6h;
+
+	  # Simple requests
+    if ($request_method ~* "(GET|POST)") {
+      add_header "Access-Control-Allow-Origin"  live.kampus.ebyu.edu.tr;
+    }
+
+    # Preflighted requests
+    if ($request_method = OPTIONS ) {
+      add_header "Access-Control-Allow-Origin"  live.kampus.ebyu.edu.tr;
+      add_header "Access-Control-Allow-Methods" "GET, POST, OPTIONS, HEAD";
+      #add_header "Access-Control-Allow-Headers" "Authorization, Origin, X-Requested-With, Content-Type, Accept,x-signalr-user-agent";
+      return 200;
+    }
 }
